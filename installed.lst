@@ -1,0 +1,4 @@
+version 2
+set updatemode "1"
+set declined ""
+"Plugins/EzHud Plugin" ver=5528 gamedir= arch=linux_amd64 file=fteplug_ezhud_amd64.5528.so test=1
