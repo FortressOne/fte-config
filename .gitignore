@@ -8,6 +8,7 @@ fortress/progs/
 fortress/sound/
 fortress/screenshots/
 id1/skins/
+fortress/fte.cfg
 fortress/zel.cfg
 installed.lst
 *.so
