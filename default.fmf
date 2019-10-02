@@ -5,4 +5,5 @@ game quake
 name "FortressOne"
 basegame id1
 gamedir fortress
+protocolname "FTE-Quake DarkPlaces-Quake"
 disablehomedir 1
