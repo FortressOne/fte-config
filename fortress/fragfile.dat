@@ -576,6 +576,10 @@
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken your flag!"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the Blue Flag"		//Dissect
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the blue flag"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the Blue flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the Red flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the Blue Crystal!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the Red Crystal!"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the blue key!"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the enemy flag!"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the red flag"
@@ -601,8 +605,13 @@
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the SPAZ-BALL!"		// Spaz4
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" droped the hot potatoe"	// Tater. it's a dropped msg, but putting it here since the map has no taken msg
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the ball!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" Took the Red flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" Took the blue flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" picked up blue's flag."
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" picked up red's flag."
 
-
+#DEFINE FLAG_ALERT	X_DROPS_FLAG		" lost the Red flag!"
+#DEFINE FLAG_ALERT	X_DROPS_FLAG		" lost the Blue flag!"
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		" dropped red's flag"
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		" dropped blue's flag"
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		" Dropped the"
@@ -666,3 +675,4 @@
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Decides YELLOW Must Lose!"		// Spaz4
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Shoves It Up GREENS Backside!"	// Spaz4
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" scores!"
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Capped!!"
