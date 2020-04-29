@@ -16,6 +16,6 @@ fortress/qconsole.log
 fortress/fte.cfg
 fortress/zel.cfg
 installed.lst
-*.so
+fteplug_ezhud.so
 crash.log
 csqccore.txt
