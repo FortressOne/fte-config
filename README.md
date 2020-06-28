@@ -1,5 +1,14 @@
 # fte-config
 
-- Download latest FTE client from http://fte.triptohell.info/downloads
-- Extract to root directory
-- Make executable
+## Windows
+
+Dowload and copy to FortressOne directory:
+  - [FTE client](http://triptohell.info/moodles/win64/fteqw64.exe)
+  - [ezhud plugin](http://triptohell.info/moodles/win64/fteplug_ezhud_x64.dll)
+
+
+## Linux
+
+Dowload and copy to FortressOne directory:
+  - [FTE client](http://triptohell.info/moodles/linux_amd64/fteqw64)
+  - [ezhud plugin](http://triptohell.info/moodles/linux_amd64/fteplug_ezhud_amd64.so)
