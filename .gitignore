@@ -13,3 +13,5 @@ fortress/zel.cfg
 installed.lst
 *.so
 crash.log
+update_cfg.sh
+fortress/update_cfg.cfg
