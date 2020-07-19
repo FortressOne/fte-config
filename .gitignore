@@ -15,3 +15,4 @@ installed.lst
 crash.log
 update_cfg.sh
 fortress/update_cfg.cfg
+fortress/fte.cfg
