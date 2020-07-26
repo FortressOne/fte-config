@@ -1,5 +1,6 @@
 fteqw
 fteqw64
+update_cfg.sh
 FortressOne/conhistory.txt
 FortressOne/id1/pak0.pak
 FortressOne/fortress/csprogsvers/
@@ -13,5 +14,4 @@ FortressOne/fortress/zel.cfg
 FortressOne/installed.lst
 FortressOne/*.so
 FortressOne/crash.log
-FortressOne/update_cfg.sh
 FortressOne/fortress/update_cfg.cfg
