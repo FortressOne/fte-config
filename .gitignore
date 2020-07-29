@@ -1,7 +1,7 @@
 fteqw
 fteqw64
 tmp/
-build/
+output/
 FortressOne/conhistory.txt
 FortressOne/id1/pak0.pak
 FortressOne/fortress/fte.cfg
