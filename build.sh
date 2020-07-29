@@ -29,11 +29,11 @@ cp git.zip tmp/windows/fortressone-fte-windows-${version}-portable.zip
 mv git.zip tmp/linux/fortressone-fte-linux-${version}-portable.zip
 
 cd tmp/windows/ || exit
-zip -ur fortressone-fte-windows-${version}-portable.zip FortressOne
+zip -ur fortressone-fte-windows-${version}-portable.zip FortressOne/
 cd ../../
 
 cd tmp/linux/ || exit
-zip -ur fortressone-fte-linux-${version}-portable.zip FortressOne
+zip -ur fortressone-fte-linux-${version}-portable.zip FortressOne/
 cd ../../
 
 mv tmp/windows/fortressone-fte-windows-${version}-portable.zip output/
