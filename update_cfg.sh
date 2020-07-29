@@ -1,8 +1,6 @@
-cd FortressOne/ || exit
-cp fortress/default.cfg fortress/fte.cfg
-FortressOne/fteqw64 -basedir Fortressone/ +exec update_cfg.cfg +cfg_save +quit
-cp fortress/fte.cfg fortress/default.cfg
-FortressOne/fteqw64 -basedir Fortressone/ +exec update_cfg.cfg +cfg_save +quit
-cp fortress/fte.cfg fortress/default.cfg
-cd - || exit
+cp FortressOne/fortress/default.cfg FortressOne/fortress/fte.cfg
+FortressOne/fteqw64 -basedir FortressOne/ +exec update_cfg.cfg +cfg_save +quit
+cp FortressOne/fortress/fte.cfg FortressOne/fortress/default.cfg
+FortressOne/fteqw64 -basedir FortressOne/ +exec update_cfg.cfg +cfg_save +quit
+cp FortressOne/fortress/fte.cfg FortressOne/fortress/default.cfg
 git diff
