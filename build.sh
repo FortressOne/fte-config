@@ -38,3 +38,4 @@ cd ../../
 
 mv tmp/windows/fortressone-fte-windows-${version}-portable.zip output/
 mv tmp/linux/fortressone-fte-linux-${version}-portable.zip output/
+rm -rf tmp/
