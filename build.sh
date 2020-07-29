@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+version=$(cat VERSION)
+
 mkdir -p output/
 mkdir -p tmp/windows/FortressOne/
 mkdir -p tmp/linux/FortressOne/
@@ -23,16 +25,16 @@ git archive \
   HEAD \
   FortressOne/
 
-cp git.zip tmp/windows/fortressone-fte-windows-0.1.1-beta.1-portable.zip
-mv git.zip tmp/linux/fortressone-fte-linux-0.1.1-beta.1-portable.zip
+cp git.zip tmp/windows/fortressone-fte-windows-${version}-portable.zip
+mv git.zip tmp/linux/fortressone-fte-linux-${version}-portable.zip
 
 cd tmp/windows/ || exit
-zip -ur fortressone-fte-windows-0.1.1-beta.1-portable.zip FortressOne
+zip -ur fortressone-fte-windows-${version}-portable.zip FortressOne
 cd ../../
 
 cd tmp/linux/ || exit
-zip -ur fortressone-fte-linux-0.1.1-beta.1-portable.zip FortressOne
+zip -ur fortressone-fte-linux-${version}-portable.zip FortressOne
 cd ../../
 
-mv tmp/windows/fortressone-fte-windows-0.1.1-beta.1-portable.zip output/
-mv tmp/linux/fortressone-fte-linux-0.1.1-beta.1-portable.zip output/
+mv tmp/windows/fortressone-fte-windows-${version}-portable.zip output/
+mv tmp/linux/fortressone-fte-linux-${version}-portable.zip output/
