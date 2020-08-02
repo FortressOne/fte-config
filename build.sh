@@ -22,6 +22,8 @@ curl http://triptohell.info/moodles/linux_amd64/fteqw64 \
 curl http://triptohell.info/moodles/linux_amd64/fteplug_ezhud_amd64.so \
   --output tmp/linux/FortressOne/fteplug_ezhud_amd64.so
 
+chmod +x tmp/linux/FortressOne/fteqw64
+
 git archive \
   --verbose \
   --format zip \
