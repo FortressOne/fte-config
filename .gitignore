@@ -18,3 +18,5 @@ FortressOne/installed.lst
 FortressOne/*.so
 FortressOne/crash.log
 FortressOne/fortress/update_cfg.cfg
+FortressOne/fteplug_ezhud_x64.dll
+FortressOne/fteqw64.exe
