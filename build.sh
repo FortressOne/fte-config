@@ -10,16 +10,16 @@ mkdir -p tmp/linux/FortressOne/
 curl https://www.mirafiori.com/ftp/pub/gaming/pak0.pak \
   --output tmp/FortressOne/id1/pak0.pak
 
-curl http://triptohell.info/moodles/win64/debug/fteqw64.exe \
+curl https://triptohell.info/moodles/win64/debug/fteqw64.exe \
   --output tmp/windows/FortressOne/fteqw64.exe
 
-curl http://triptohell.info/moodles/win64/fteplug_ezhud_x64.dll \
+curl https://triptohell.info/moodles/win64/fteplug_ezhud_x64.dll \
   --output tmp/windows/FortressOne/fteplug_ezhud_x64.dll
 
-curl http://triptohell.info/moodles/linux_amd64/debug/fteqw64 \
+curl https://triptohell.info/moodles/linux_amd64/debug/fteqw64 \
   --output tmp/linux/FortressOne/fteqw64
 
-curl http://triptohell.info/moodles/linux_amd64/fteplug_ezhud_amd64.so \
+curl https://triptohell.info/moodles/linux_amd64/fteplug_ezhud_amd64.so \
   --output tmp/linux/FortressOne/fteplug_ezhud_amd64.so
 
 chmod +x tmp/linux/FortressOne/fteqw64
