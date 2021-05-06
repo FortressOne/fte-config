@@ -20,3 +20,6 @@ FortressOne/crash.log
 FortressOne/fortress/update_cfg.cfg
 FortressOne/mcp/
 FortressOne/dlcache/
+*.mdl
+*.dll
+*.mdl
