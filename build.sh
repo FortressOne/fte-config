@@ -11,13 +11,13 @@ curl https://www.mirafiori.com/ftp/pub/gaming/pak0.pak \
   --output tmp/FortressOne/id1/pak0.pak
 
 curl https://github.com/FortressOne/fteqw-code/releases/latest/download/fortressone64.exe \
-  --output tmp/windows/FortressOne/fteqw64.exe
+  --output tmp/windows/FortressOne/fortressone64.exe
 
 curl https://github.com/FortressOne/fteqw-code/releases/latest/download/fteplug_ezhud_x64.dll \
   --output tmp/windows/FortressOne/fteplug_ezhud_x64.dll
 
 curl https://github.com/FortressOne/fteqw-code/releases/latest/download/fortressone64 \
-  --output tmp/linux/FortressOne/fteqw64
+  --output tmp/linux/FortressOne/fortressone64
 
 curl https://github.com/FortressOne/fteqw-code/releases/latest/download/fteplug_ezhud_amd64.so \
   --output tmp/linux/FortressOne/fteplug_ezhud_amd64.so
