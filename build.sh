@@ -7,20 +7,27 @@ mkdir -p tmp/FortressOne/id1/
 mkdir -p tmp/windows/FortressOne/
 mkdir -p tmp/linux/FortressOne/
 
-curl https://www.mirafiori.com/ftp/pub/gaming/pak0.pak \
-  --output tmp/FortressOne/id1/pak0.pak
+curl --location \
+  --output tmp/FortressOne/id1/pak0.pak \
+  https://www.mirafiori.com/ftp/pub/gaming/pak0.pak
 
-curl https://github.com/FortressOne/fteqw-code/releases/latest/download/fortressone64.exe \
-  --output tmp/windows/FortressOne/fortressone64.exe
+curl --location \
+  --output tmp/windows/FortressOne/fortressone64.exe \
+  https://github.com/FortressOne/fteqw-code/releases/latest/download/fortressone64.exe
 
-curl https://github.com/FortressOne/fteqw-code/releases/latest/download/fteplug_ezhud_x64.dll \
-  --output tmp/windows/FortressOne/fteplug_ezhud_x64.dll
+curl --location \
+	--output tmp/windows/FortressOne/fteplug_ezhud_x64.dll \
+	https://github.com/FortressOne/fteqw-code/releases/latest/download/fteplug_ezhud_x64.dll
 
-curl https://github.com/FortressOne/fteqw-code/releases/latest/download/fortressone64 \
-  --output tmp/linux/FortressOne/fortressone64
+curl --location \
+	--output tmp/linux/FortressOne/fortressone64 \
+	https://github.com/FortressOne/fteqw-code/releases/latest/download/fortressone64
 
-curl https://github.com/FortressOne/fteqw-code/releases/latest/download/fteplug_ezhud_amd64.so \
-  --output tmp/linux/FortressOne/fteplug_ezhud_amd64.so
+curl --location \
+	--output tmp/linux/FortressOne/fteplug_ezhud_amd64.so \
+	https://github.com/FortressOne/fteqw-code/releases/latest/download/fteplug_ezhud_amd64.so
+
+chmod +x tmp/linux/FortressOne/fortressone64
 
 git archive \
   --verbose \
@@ -46,4 +53,4 @@ cd ../../
 
 mv tmp/windows/fortressone-fte-windows-${version}-portable.zip output/
 mv tmp/linux/fortressone-fte-linux-${version}-portable.zip output/
-# rm -rf tmp/
+rm -rf tmp/
