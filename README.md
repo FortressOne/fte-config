@@ -1,25 +1,30 @@
 # fte-config
 
-## Windows
-
-1. Dowload and copy to FortressOne directory:
-  - [FTE client](http://triptohell.info/moodles/win64/fteqw64.exe)
-  - [ezhud plugin](http://triptohell.info/moodles/win64/fteplug_ezhud_x64.dll)
-2. Download [pak0.pak](https://www.mirafiori.com/ftp/pub/gaming/pak0.pak) and copy to `id1/` directory.
-3. Launch fteqw64.exe
+This repo contains all the bits of the client that arent the binaries. It is used to build the release packages.
 
 
-## Linux
+## Build releases
 
-1. Dowload and copy to FortressOne directory:
-  - [FTE client](http://triptohell.info/moodles/linux_amd64/fteqw64)
-  - [ezhud plugin](http://triptohell.info/moodles/linux_amd64/fteplug_ezhud_amd64.so)
-2. Download [pak0.pak](https://www.mirafiori.com/ftp/pub/gaming/pak0.pak) and copy to `id1/` directory.
-3. Set client to be executable:
-      ```sh
-      chmod +x fteqw64
-      ```
-4. Run the game:
-      ```sh
-      ./fteqw64
-      ```
+- Update VERSION file
+- Run build script
+		```
+		./build.sh
+		```
+- Upload output/*.zip to GitHub
+- Update links on website and stores
+
+
+## Neatly change default.cfg
+
+- Add commands to FortressOne/fortress/update_cfg.cfg
+- Run
+		```
+		./update_cfg.sh
+		```
+- This will open the game, execute update_cfg.cfg, save the config as default.cfg.
+- Also keeps default.cfg up to date with binary defaults when they change upstream.
+
+
+## Todo
+
+- Convert build.sh to Dockerfile to benefit from caching
