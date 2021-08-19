@@ -280,8 +280,9 @@
 // TeamFortress and MegaTeamFortress
 //
 
-// these three are still unsupported because there's no way to write out a sentrygun was destroyed (do we even want to do this?)
-// "player1's sentrygun was destroyed by player2"
+// these three are still unsupported because there's no way to write out a
+// sentrygun was destroyed (do we even want to do this?) "player1's sentrygun
+// was destroyed by player2"
 // #DEFINE OBITUARY	PLAYER_DEATH   SENTRYGUN	"'s sentrygun was no match for "
 // "up2 destroys his sentrygun"
 
@@ -295,6 +296,8 @@
 #DEFINE WEAPON_CLASS    SNIPER_RIFLE        "sniper rifle"      "snipe"
 #DEFINE WEAPON_CLASS    SNIPER_SPRAY        "sniper spray"      "spray"
 #DEFINE WEAPON_CLASS    TRANQUILIZER        "tranquilizer"      "tranq"
+#DEFINE WEAPON_CLASS    KNIFE               "knife"             "knife"
+#DEFINE WEAPON_CLASS    SPANNER             "spanner"           "span"
 
 
 #DEFINE WEAPON_CLASS    CALTROP             "caltrop"           "calt"
@@ -304,9 +307,12 @@
 #DEFINE WEAPON_CLASS    HANDGREN            "hand grenade"      "hgren"
 #DEFINE WEAPON_CLASS    MIRVGREN            "mirv grenade"      "mirv"
 #DEFINE WEAPON_CLASS    NAILGREN            "nail grenade"      "nailg"
+#DEFINE WEAPON_CLASS    SHOCKGREN           "shock grenade"     "shockg"
 
 #DEFINE WEAPON_CLASS    DETPACK             "detpack"           "dpack"
 #DEFINE WEAPON_CLASS    DISPENSER           "dispenser"         "disp"
+#DEFINE WEAPON_CLASS    SENTRYGUN           "sentry gun"        "sentry"
+#DEFINE WEAPON_CLASS    SG_KILL             "sentry gun kill"   "sgkill"
 
 
 // Mega TeamFortress
@@ -314,10 +320,7 @@
 #DEFINE WEAPON_CLASS    AIRSTRIKE           "airstrke"
 #DEFINE WEAPON_CLASS    DISEASE             "ill"	//as in illness
 #DEFINE WEAPON_CLASS    DRONE               "drone"
-#DEFINE WEAPON_CLASS    KNIFE               "knife"
 #DEFINE WEAPON_CLASS    PROXI               "proxi"
-#DEFINE WEAPON_CLASS    SENTRYGUN           "sent"
-#DEFINE WEAPON_CLASS    SPANNER             "span"
 #DEFINE WEAPON_CLASS    SPIKE               "spike"
 #DEFINE WEAPON_CLASS    TESLACOIL           "tesla"
 #DEFINE WEAPON_CLASS    TOASTER             "toast"
@@ -330,7 +333,7 @@
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	NAILGUN			" was capped by "
 
 // Sniper
-#DEFINE OBITUARY	X_FRAGGED_BY_Y	AIRSTRIKE		" was bombed by " "'s AirStrike call"
+#DEFINE OBITUARY	X_FRAGGED_BY_Y	AIRSTRIKE			" was bombed by " "'s AirStrike call"
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	SNIPER_RIFLE		" takes a bullet in the chest from "
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	SNIPER_RIFLE		" succumbs to sniperfire from "
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	SNIPER_RIFLE		" gets a third eye from "
@@ -350,6 +353,7 @@
 // Soldier
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	NAILGREN		" gets flayed by "  "'s nail grenade"
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	NAILGREN		" gets perforated by " "'s nail grenade"
+#DEFINE OBITUARY	X_FRAGGED_BY_Y	SHOCKGREN		" gets melted by "  "'s shock grenade"
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	PROXI			" gets too friendly with " "'s Proxi grenade"
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	ROCKET_LAUNCHER		" is reamed by " "'s rocket"
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	ROCKET_LAUNCHER		"'s bunghole was ripped by " "'s rocket"
@@ -423,6 +427,8 @@
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	SPANNER			" was spanner-murdered by "
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	SPANNER			" was spanner-wacked by "
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	TESLACOIL		"'s was obliterated by " "'s tesla coil"
+#DEFINE OBITUARY	X_FRAGGED_BY_Y	SG_KILL			"'s sentrygun was destroyed by "
+#DEFINE OBITUARY	X_FRAGGED_BY_Y	SG_KILL			"'s sentrygun was telegragged by "
 
 // General Kills
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	AXE			" is split from crotch to sternum by " "'s axe swing"
@@ -496,6 +502,7 @@
 #DEFINE OBITUARY	PLAYER_SUICIDE	HANDGREN		" tiptoed over his own grenade"
 #DEFINE OBITUARY	PLAYER_SUICIDE	INCENDIARY_ROCKET	" chars himself with an incendiary rocket"
 #DEFINE OBITUARY	PLAYER_SUICIDE	NAILGREN		" hammers himself"
+#DEFINE OBITUARY	PLAYER_SUICIDE	SHOCKGREN		" electrocutes himself"
 #DEFINE OBITUARY	PLAYER_SUICIDE	NOWEAPON		" bakes himself"
 #DEFINE OBITUARY	PLAYER_SUICIDE	NOWEAPON		" couldn't outrun his airspam"
 #DEFINE OBITUARY	PLAYER_SUICIDE	NOWEAPON		" died impossibly!"
@@ -523,6 +530,7 @@
 #DEFINE OBITUARY	PLAYER_SUICIDE	SENTRYGUN		" gets too friendly with his sentrygun"
 #DEFINE OBITUARY	PLAYER_SUICIDE	SENTRYGUN		" crossed his sentry gun's line of fire"
 
+#DEFINE OBITUARY	X_TEAMKILLS_UNKNOWN	SG_KILL			" destroys his sentrygun"
 
 // Team Kills
 #DEFINE OBITUARY	X_TEAMKILLS_Y	TEAMKILL		" mows down teammate "
