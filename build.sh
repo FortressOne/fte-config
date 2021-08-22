@@ -52,7 +52,7 @@ git archive \
   FortressOne/
 
 echo Packaging pak0.pak
-zip -d git.zip FortressOne/fortress/pak0/
+zip -d git.zip "FortressOne/fortress/pak0/*"
 
 mkdir -p tmp/FortressOne/fortress
 
