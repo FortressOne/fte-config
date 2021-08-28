@@ -192,7 +192,6 @@
 #DEFINE OBITUARY	X_TEAMKILLED_UNKNOWN TELEFRAG		" was telefragged by his teammate"
 #DEFINE OBITUARY	X_TEAMKILLED_UNKNOWN TELEFRAG		" was telefragged by her teammate"
 
-
 #DEFINE OBITUARY	PLAYER_DEATH	NOWEAPON		" died"
 #DEFINE OBITUARY	PLAYER_DEATH	NOWEAPON		" tried to leave"
 #DEFINE OBITUARY	PLAYER_DEATH	SQUISH			" was squished"
@@ -313,6 +312,7 @@
 #DEFINE WEAPON_CLASS    DISPENSER           "dispenser"         "disp"
 #DEFINE WEAPON_CLASS    SENTRYGUN           "sentry gun"        "sentry"
 #DEFINE WEAPON_CLASS    SG_KILL             "sentry gun kill"   "sgkill"
+#DEFINE WEAPON_CLASS    LASER				"laser"				"laser"
 
 
 // Mega TeamFortress
@@ -475,7 +475,7 @@
 #DEFINE OBITUARY	PLAYER_DEATH	NOWEAPON		" shoots his teammate one too many times"
 #DEFINE OBITUARY	PLAYER_DEATH	SENTRYGUN		" obstructs his team's sentry gun"	// check this, its a atk
 #DEFINE OBITUARY	PLAYER_DEATH	TRAP			" tried to use the "
-
+#DEFINE OBITUARY	PLAYER_DEATH	LASER			" was laser'd"
 
 // Suicides
 #DEFINE OBITUARY	PLAYER_SUICIDE	CALTROP			" stepped on too many of his own caltrops"
