@@ -10,8 +10,19 @@ This repo contains all the bits of the client that arent the binaries. It is use
 		```
 		./build.sh
 		```
-- Upload output/*.zip to GitHub
+- Upload `output/*.zip` to GitHub
 - Update links on website and stores
+	- Website
+	- itch.io
+	- moddb
+	- igdb
+	- Lutris
+- Post announcements:
+	- Discord
+	- Twitter
+	- ModDB
+	- Reddit
+	- Hacker news
 
 
 ## Neatly change default.cfg
