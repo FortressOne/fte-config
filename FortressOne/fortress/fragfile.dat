@@ -164,6 +164,14 @@
 #DEFINE WEAPON_CLASS    TEAMKILL			"kills"				"tkills"		"\tkills\"
 
 
+#DEFINE WEAPON_CLASS    LASER                "laser"                "laser"            "\laser\"
+
+#DEFINE WEAPON_CLASS    SGDEATH		    "destroys"		"SGdeath"
+
+#DEFINE OBITUARY	PLAYER_DEATH	TRAP		" died"
+#DEFINE OBITUARY   	PLAYER_DEATH    TRAP            " was laser'd"
+
+
 //
 //OBITUARIES
 //
@@ -189,13 +197,13 @@
 #DEFINE OBITUARY	PLAYER_DEATH	TRAP			" was zapped"
 #DEFINE OBITUARY	PLAYER_DEATH	TRAP			" ate a lavaball"
 
+
 #DEFINE OBITUARY	X_TEAMKILLED_UNKNOWN TELEFRAG		" was telefragged by his teammate"
 #DEFINE OBITUARY	X_TEAMKILLED_UNKNOWN TELEFRAG		" was telefragged by her teammate"
 
-
-#DEFINE OBITUARY	PLAYER_DEATH	NOWEAPON		" died"
 #DEFINE OBITUARY	PLAYER_DEATH	NOWEAPON		" tried to leave"
 #DEFINE OBITUARY	PLAYER_DEATH	SQUISH			" was squished"
+#DEFINE OBITUARY	PLAYER_DEATH	LASER			" was squished"
 
 #DEFINE OBITUARY	PLAYER_SUICIDE	NOWEAPON		" suicides"
 
@@ -304,23 +312,24 @@
 #DEFINE WEAPON_CLASS    HANDGREN            "hand grenade"      "hgren"
 #DEFINE WEAPON_CLASS    MIRVGREN            "mirv grenade"      "mirv"
 #DEFINE WEAPON_CLASS    NAILGREN            "nail grenade"      "nailg"
+#DEFINE WEAPON_CLASS    SHOCKGREN           "shock grenade"     "shockg"
 
 #DEFINE WEAPON_CLASS    DETPACK             "detpack"           "dpack"
 #DEFINE WEAPON_CLASS    DISPENSER           "dispenser"         "disp"
 
 
 // Mega TeamFortress
-#DEFINE WEAPON_CLASS    20MM                "20mm"
-#DEFINE WEAPON_CLASS    AIRSTRIKE           "airstrke"
-#DEFINE WEAPON_CLASS    DISEASE             "ill"	//as in illness
-#DEFINE WEAPON_CLASS    DRONE               "drone"
-#DEFINE WEAPON_CLASS    KNIFE               "knife"
-#DEFINE WEAPON_CLASS    PROXI               "proxi"
-#DEFINE WEAPON_CLASS    SENTRYGUN           "sent"
-#DEFINE WEAPON_CLASS    SPANNER             "span"
-#DEFINE WEAPON_CLASS    SPIKE               "spike"
-#DEFINE WEAPON_CLASS    TESLACOIL           "tesla"
-#DEFINE WEAPON_CLASS    TOASTER             "toast"
+#DEFINE WEAPON_CLASS    20MM                "20mm"      "20mm"
+#DEFINE WEAPON_CLASS    AIRSTRIKE           "airstrke"  "airstrke"
+#DEFINE WEAPON_CLASS    DISEASE             "ill"	"ill" //as in illness
+#DEFINE WEAPON_CLASS    DRONE               "drone"     "drone"
+#DEFINE WEAPON_CLASS    KNIFE               "knife"     "knife"
+#DEFINE WEAPON_CLASS    PROXI               "proxi"     "proxi"
+#DEFINE WEAPON_CLASS    SENTRYGUN           "sentry"	"sent"
+#DEFINE WEAPON_CLASS    SPANNER             "span"      "span"
+#DEFINE WEAPON_CLASS    SPIKE               "spike"     "spike"
+#DEFINE WEAPON_CLASS    TESLACOIL           "tesla"     "telsa"
+#DEFINE WEAPON_CLASS    TOASTER             "toast"     "toast"
 
 
 // Scout
@@ -350,6 +359,7 @@
 // Soldier
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	NAILGREN		" gets flayed by "  "'s nail grenade"
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	NAILGREN		" gets perforated by " "'s nail grenade"
+#DEFINE OBITUARY	X_FRAGGED_BY_Y	SHOCKGREN		" gets melted by "  "'s shock grenade"
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	PROXI			" gets too friendly with " "'s Proxi grenade"
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	ROCKET_LAUNCHER		" is reamed by " "'s rocket"
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	ROCKET_LAUNCHER		"'s bunghole was ripped by " "'s rocket"
@@ -423,6 +433,8 @@
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	SPANNER			" was spanner-murdered by "
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	SPANNER			" was spanner-wacked by "
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	TESLACOIL		"'s was obliterated by " "'s tesla coil"
+#DEFINE OBITUARY	X_FRAGGED_BY_Y	SGDEATH			"'s sentrygun was destroyed by "
+#DEFINE OBITUARY	X_TEAMKILLS_UNKNOWN SGDEATH		" destroys his sentrygun"
 
 // General Kills
 #DEFINE OBITUARY	X_FRAGGED_BY_Y	AXE			" is split from crotch to sternum by " "'s axe swing"
@@ -521,6 +533,7 @@
 #DEFINE OBITUARY	PLAYER_SUICIDE	SENTRYGUN		" gets wasted by his sentry gun"
 #DEFINE OBITUARY	PLAYER_SUICIDE	SENTRYGUN		" intercepts his sentry gun's rocket"
 #DEFINE OBITUARY	PLAYER_SUICIDE	SENTRYGUN		" gets too friendly with his sentrygun"
+#DEFINE OBITUARY	PLAYER_SUICIDE	SENTRYGUN		" gets too friendly with his sentry gun"
 #DEFINE OBITUARY	PLAYER_SUICIDE	SENTRYGUN		" crossed his sentry gun's line of fire"
 
 
@@ -546,30 +559,30 @@
 #DEFINE OBITUARY	PLAYER_DEATH	TRAP			" got knocked the fuck out!"
 
 //FLAG ALERTS
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" «œ‘ the ≈Œ≈ÕŸ flag!"		//2fort5 .br
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" «œ‘ the “≈ƒ flag!"		//2fort5 .br
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" ‘œœÀ Ÿœ’“ key!"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" ‘œœÀ the ≈Œ≈ÕŸ key!"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" ÁÔÙ ‚ÏıÂßÛ ÊÏ·ÁÆ"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" ÁÔÙ ÚÂ‰ßÛ ÊÏ·ÁÆ"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" Ë·Û ÙËÂ “Â‰ ∆Ï·Á"		//Dissect
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √á√è√î the √Ö√é√Ö√ç√ô flag!"		//2fort5 .br
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √á√è√î the √í√Ö√Ñ flag!"		//2fort5 .br
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √î√è√è√ã √ô√è√ï√í key!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √î√è√è√ã the √Ö√é√Ö√ç√ô key!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √ß√Ø√¥ √¢√¨√µ√•¬ß√≥ √¶√¨√°√ß¬Æ"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √ß√Ø√¥ √≤√•√§¬ß√≥ √¶√¨√°√ß¬Æ"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √®√°√≥ √¥√®√• √í√•√§ √Ü√¨√°√ß"		//Dissect
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" GOT the BLUE flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" GOT the RED flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" got the red flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" got the blue flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" Has the Blue Flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" Has the Red Flag"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" StolE ThE ¬Ã’≈ FlaG!"		//Fcast
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" StolE ThE “≈ƒ FlaG!"		//Fcast
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" StolE ThE √Ç√å√ï√Ö FlaG!"		//Fcast
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" StolE ThE √í√Ö√Ñ FlaG!"		//Fcast
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" TOOK the ENEMY key"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" got blue's flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" got red's flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" got your control key!"	//nmtrees
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" grabbed the enemy Key."
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" grabbed the enemy key."
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the ¡⁄’“≈ flag!"	//Excel
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the √“…Õ”œŒ flag"	//Excel
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the “≈ƒ flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the √Å√ö√ï√í√Ö flag!"	//Excel
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the √É√í√â√ç√ì√è√é flag"	//Excel
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the √í√Ö√Ñ flag!"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the blue flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the red flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken your Key."
@@ -589,17 +602,17 @@
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" took the blue flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" took the red flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" took your flag!"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" took the Blue ∆Ï·Á!"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" took the red ∆Ï·Á!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" took the Blue √Ü√¨√°√ß!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" took the red √Ü√¨√°√ß!"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the Red Flag!"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has taken the Blue Flag!"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" «œ‘ the ¬Ã’≈ flag!"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" «œ‘ the “≈ƒ flag!"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the “≈ƒ†”Õ’“∆ flag"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the ¬Ã’≈†”Õ’“∆ flag"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" ‘œœÀ Ÿœ’“ flag!"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" ‘œœÀ the ≈Œ≈ÕŸ flag!"
-#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √¡–‘’“≈ƒ the ≈Œ≈ÕŸ flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √á√è√î the √Ç√å√ï√Ö flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √á√è√î the √í√Ö√Ñ flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the √í√Ö√Ñ¬†√ì√ç√ï√í√Ü flag"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the √Ç√å√ï√Ö¬†√ì√ç√ï√í√Ü flag"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √î√è√è√ã √ô√è√ï√í flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √î√è√è√ã the √Ö√é√Ö√ç√ô flag!"
+#DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" √É√Å√ê√î√ï√í√Ö√Ñ the √Ö√é√Ö√ç√ô flag!"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" took the red flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" took the blue flag"
 #DEFINE FLAG_ALERT	X_TOUCHES_FLAG		" has the SPAZ-BALL!"		// Spaz4
@@ -619,15 +632,15 @@
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		" dropped the"
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		" dropped your"
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		" lost the"
-#DEFINE FLAG_ALERT	X_DROPS_FLAG		" ÏÔÛÙ the"
+#DEFINE FLAG_ALERT	X_DROPS_FLAG		" √¨√Ø√≥√¥ the"
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		" was incinerated by the flag's heat"
-#DEFINE FLAG_ALERT	X_DROPS_FLAG		" Ãœ”‘ the"
-#DEFINE FLAG_ALERT	X_DROPS_FLAG		" ‰ÚÔÂ‰"
+#DEFINE FLAG_ALERT	X_DROPS_FLAG		" √å√è√ì√î the"
+#DEFINE FLAG_ALERT	X_DROPS_FLAG		" √§√≤√Ø√∞√∞√•√§"
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		"Dropped the flag"		//mbasesr.bsp on au servers forget the space
-#DEFINE FLAG_ALERT	X_DROPS_FLAG		" Ãœ”‘ the ¬Ã’≈ flag!"		//2fort5 .br
-#DEFINE FLAG_ALERT	X_DROPS_FLAG		" Ãœ”‘ the “≈ƒ flag!"		//2fort5 .br
-#DEFINE FLAG_ALERT	X_DROPS_FLAG		" ‰ÚÔÂ‰ ÙËÂ ¬ÏıÂ ∆Ï·Á"	//Dissect
-#DEFINE FLAG_ALERT	X_DROPS_FLAG		" ‰ÚÔÂ‰ ÙËÂ “Â‰ ∆Ï·Á"		//Dissect
+#DEFINE FLAG_ALERT	X_DROPS_FLAG		" √å√è√ì√î the √Ç√å√ï√Ö flag!"		//2fort5 .br
+#DEFINE FLAG_ALERT	X_DROPS_FLAG		" √å√è√ì√î the √í√Ö√Ñ flag!"		//2fort5 .br
+#DEFINE FLAG_ALERT	X_DROPS_FLAG		" √§√≤√Ø√∞√∞√•√§ √¥√®√• √Ç√¨√µ√• √Ü√¨√°√ß"	//Dissect
+#DEFINE FLAG_ALERT	X_DROPS_FLAG		" √§√≤√Ø√∞√∞√•√§ √¥√®√• √í√•√§ √Ü√¨√°√ß"		//Dissect
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		" droped the hot potatoe"	//tater
 #DEFINE FLAG_ALERT	X_DROPS_FLAG		" dropped the ball!"
 
@@ -638,38 +651,38 @@
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"captured"			//h4rdcore.bsp on au servers forget the space
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Cap's the flag for the Blue team."
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Cap's the flag for the Red team."
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" „·ÙıÚÂ‰"
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" ·„ÙÈˆ·ÙÂ‰"
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √¡–‘’“≈ƒ the ≈Œ≈ÕŸ flag!"	//2fort5 .br
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" brought back a ¬ÈÛ„ıÈÙ"	//Biscuit Flag Capture
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √¡–‘’“≈ƒ the ≈Œ≈ÕŸ flag!"	//2fort5 .br
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √£√°√∞√¥√µ√≤√•√§"
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √°√£√¥√©√∂√°√¥√•√§"
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √É√Å√ê√î√ï√í√Ö√Ñ the √Ö√é√Ö√ç√ô flag!"	//2fort5 .br
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" brought back a √Ç√©√≥√£√µ√©√¥"	//Biscuit Flag Capture
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √É√Å√ê√î√ï√í√Ö√Ñ the √Ö√é√Ö√ç√ô flag!"	//2fort5 .br
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Lava CP cap"			//Dissect 1
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Bridge CPî cap"		//Dissect 2
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Water CPï cap"		//Dissect 3
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Circles CPñ cap"		//Dissect 4
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Rook CPó cap"			//Dissect 5
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Attic CPò cap"		//Dissect 6
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€¬ÏıÂ ÙÂ·Ì› captures the ¬ÏıÂ ◊·ÚÂËÔıÛÂ ≠ √–±"		//Canalzon 1 blue team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€¬ÏıÂ ÙÂ·Ì› captures the ¡Ú„Ë “ÔÔÌ ≠ √–≤"		//Canalzon 2 blue team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€¬ÏıÂ ÙÂ·Ì› captures the ÃÈ‚Ú·Ú˘ ≠ √–≥"		//Canalzon 3 blue team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€¬ÏıÂ ÙÂ·Ì› captures the ”Ì·ÏÏ ◊·ÚÂËÔıÛÂ ≠ √–¥"	//Canalzon 4 blue team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€¬ÏıÂ ÙÂ·Ì› captures the ∆ÔıÓÙ·ÈÓ ≠ √–µ"		//Canalzon 5 blue team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€¬ÏıÂ ÙÂ·Ì› captures the ¬·Ï„ÔÓ˘ ≠ √–∂"		//Canalzon 6 blue team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€¬ÏıÂ ÙÂ·Ì› captures the ¬Ô·ÙËÔıÛÂ ≠ √–∑"		//Canalzon 7 blue team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€¬ÏıÂ ÙÂ·Ì› captures the “Â‰ ◊·ÚÂËÔıÛÂ ≠ √–∏"		//Canalzon 8 blue team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› captures the ¬ÏıÂ ◊·ÚÂËÔıÛÂ ≠ √–±"		//Canalzon 1 red team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› captures the ¡Ú„Ë “ÔÔÌ ≠ √–≤"		//Canalzon 2 red team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› captures the ÃÈ‚Ú·Ú˘ ≠ √–≥"			//Canalzon 3 red team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› captures the ”Ì·ÏÏ ◊·ÚÂËÔıÛÂ ≠ √–¥"		//Canalzon 4 red team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› captures the ∆ÔıÓÙ·ÈÓ ≠ √–µ"		//Canalzon 5 red team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› captures the ¬·Ï„ÔÓ˘ ≠ √–∂"			//Canalzon 6 red team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› captures the ¬Ô·ÙËÔıÛÂ ≠ √–∑"		//Canalzon 7 red team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› captures the “Â‰ ◊·ÚÂËÔıÛÂ ≠ √–∏"		//Canalzon 8 red team
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› √¡–‘’“≈ƒ the “≈ƒ flag!"			//kw4
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"€“Â‰ ÙÂ·Ì› √¡–‘’“≈ƒ the ¬Ã’≈ flag!"			//kw4
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √¡–‘’“≈ƒ the ¬Ã’≈ flag!"
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √¡–‘’“≈ƒ the “≈ƒ flag!"
-#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √¡–‘’“≈ƒ Ÿœ’“ flag!"
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Bridge CP‚Äù cap"		//Dissect 2
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Water CP‚Ä¢ cap"		//Dissect 3
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Circles CP‚Äì cap"		//Dissect 4
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Rook CP‚Äî cap"			//Dissect 5
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Attic CPÀú cap"		//Dissect 6
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√Ç√¨√µ√• √¥√•√°√≠√ù captures the √Ç√¨√µ√• √ó√°√≤√•√®√Ø√µ√≥√• ¬≠ √É√ê¬±"		//Canalzon 1 blue team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√Ç√¨√µ√• √¥√•√°√≠√ù captures the √Å√≤√£√® √í√Ø√Ø√≠ ¬≠ √É√ê¬≤"		//Canalzon 2 blue team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√Ç√¨√µ√• √¥√•√°√≠√ù captures the √å√©√¢√≤√°√≤√π ¬≠ √É√ê¬≥"		//Canalzon 3 blue team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√Ç√¨√µ√• √¥√•√°√≠√ù captures the √ì√≠√°√¨√¨ √ó√°√≤√•√®√Ø√µ√≥√• ¬≠ √É√ê¬¥"	//Canalzon 4 blue team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√Ç√¨√µ√• √¥√•√°√≠√ù captures the √Ü√Ø√µ√Æ√¥√°√©√Æ ¬≠ √É√ê¬µ"		//Canalzon 5 blue team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√Ç√¨√µ√• √¥√•√°√≠√ù captures the √Ç√°√¨√£√Ø√Æ√π ¬≠ √É√ê¬∂"		//Canalzon 6 blue team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√Ç√¨√µ√• √¥√•√°√≠√ù captures the √Ç√Ø√°√¥√®√Ø√µ√≥√• ¬≠ √É√ê¬∑"		//Canalzon 7 blue team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√Ç√¨√µ√• √¥√•√°√≠√ù captures the √í√•√§ √ó√°√≤√•√®√Ø√µ√≥√• ¬≠ √É√ê¬∏"		//Canalzon 8 blue team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù captures the √Ç√¨√µ√• √ó√°√≤√•√®√Ø√µ√≥√• ¬≠ √É√ê¬±"		//Canalzon 1 red team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù captures the √Å√≤√£√® √í√Ø√Ø√≠ ¬≠ √É√ê¬≤"		//Canalzon 2 red team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù captures the √å√©√¢√≤√°√≤√π ¬≠ √É√ê¬≥"			//Canalzon 3 red team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù captures the √ì√≠√°√¨√¨ √ó√°√≤√•√®√Ø√µ√≥√• ¬≠ √É√ê¬¥"		//Canalzon 4 red team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù captures the √Ü√Ø√µ√Æ√¥√°√©√Æ ¬≠ √É√ê¬µ"		//Canalzon 5 red team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù captures the √Ç√°√¨√£√Ø√Æ√π ¬≠ √É√ê¬∂"			//Canalzon 6 red team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù captures the √Ç√Ø√°√¥√®√Ø√µ√≥√• ¬≠ √É√ê¬∑"		//Canalzon 7 red team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù captures the √í√•√§ √ó√°√≤√•√®√Ø√µ√≥√• ¬≠ √É√ê¬∏"		//Canalzon 8 red team
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù √É√Å√ê√î√ï√í√Ö√Ñ the √í√Ö√Ñ flag!"			//kw4
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		"√õ√í√•√§ √¥√•√°√≠√ù √É√Å√ê√î√ï√í√Ö√Ñ the √Ç√å√ï√Ö flag!"			//kw4
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √É√Å√ê√î√ï√í√Ö√Ñ the √Ç√å√ï√Ö flag!"
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √É√Å√ê√î√ï√í√Ö√Ñ the √í√Ö√Ñ flag!"
+#DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" √É√Å√ê√î√ï√í√Ö√Ñ √ô√è√ï√í flag!"
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" slams the Spaz-Ball on BLUE!"		// Spaz4
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Shows RED How It's Done!"		// Spaz4
 #DEFINE FLAG_ALERT	X_CAPTURES_FLAG		" Decides YELLOW Must Lose!"		// Spaz4
