@@ -51,7 +51,17 @@ git archive \
   HEAD \
   FortressOne/
 
+echo Packaging pak0.pak
+zip -d git.zip "FortressOne/fortress/pak0/*"
+
+mkdir -p tmp/FortressOne/fortress
+
+cd FortressOne/fortress/pak0/ || exit
+qpakman * -o ../../../tmp/FortressOne/fortress/pak0.pak
+cd ../../../
+
 cd tmp/ || exit
+zip -ur ../git.zip FortressOne/fortress/pak0.pak
 zip -ur ../git.zip FortressOne/quake_sw
 zip -ur ../git.zip FortressOne/tf28
 cd ..
